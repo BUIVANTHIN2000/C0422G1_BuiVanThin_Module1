@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let salary = parseFloat(prompt('Nhap tien lương'));
+    let thue;
+    if (salary > 50000000) {
+         thue = salary * 0.4;
+        alert('Tổng thuế là ' + thue)
+    } else if (salary > 20000000) {
+         thue = salary * 0.3;
+        alert('Tổng thuế là ' + thue)
+        console.log(2)
+    } else if (salary > 10000000) {
+         thue = salary * 0.4;
+        alert('Tổng thuế là ' + thue)
+    } else {
+        alert('Bạn quá nghèo để đóng thuế')
+    }
+</script>
+</body>
+</html>

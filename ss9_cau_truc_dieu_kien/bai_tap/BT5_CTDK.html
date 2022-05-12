@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let point1_giua_ki, point2_cuoi_ki,point3_bai_kiem_tra
+    point3_bai_kiem_tra = parseFloat(prompt("nhập điểm kiểm tra"))
+    point1_giua_ki = parseFloat(prompt("nhập điểm thi"))
+    point2_cuoi_ki = parseFloat(prompt("nhập điểm thi"))
+   let averger = (point3_bai_kiem_tra + point2_cuoi_ki + point1_giua_ki)/3
+    if (averger >= 9) {
+        alert("học sinh suất sắc")
+    }else if (averger >= 8){
+        alert("học sinh giỏi")
+    }else if(averger >= 6.5) {
+        alert("học sinh khá")
+    }else if(averger >= 5){
+        alert("học sinh trung bình")
+    }else {
+        alert("học sinh yếu")
+    }
+</script>
+</body>
+</html>
