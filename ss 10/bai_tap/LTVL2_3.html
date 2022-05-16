@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    document.write("tam giac 1" + "<br><br>");
+    let i;
+    let j;
+    let z;
+    for (i = 0; i < 5; i++) {
+        for (j = 0; j <= i; j++) {
+            document.writeln("*");
+        }
+        document.writeln("<br>");
+    }
+    document.write("tam giac 2" + "<br><br>");
+    for (i = 5; i >= 1; i--) {
+        for (j = 1; j <= i; j++) {
+            document.writeln("*")
+        }
+        document.writeln("<br>")
+    }
+    document.write("tam giac 3" + "<br><br>");
+    for (i = 1; i <= 5; i++) {
+        for (j = 4; j >= i; j--) {
+            document.write("&nbsp&nbsp");
+        }
+        for (z = 1; z <= i; z++) {
+            document.writeln("*");
+        }
+        document.writeln("<br>");
+    }
+    document.write("tam giac 4" + "<br><br>");
+    for (i = 5; i >= 1; i--) {
+        for (j = 4; j >= i; j--) {
+            document.write("&nbsp&nbsp");
+        }
+        for (z = 1; z <= i; z++) {
+            document.writeln("*");
+        }
+        document.writeln("<br>");
+    }
+    document.write("tam giac 5" + "<br><br>");
+    for (i = 1; i <= 7; i++) {
+        for (j = 1; j <= 21; j++) {
+            if (i == 1 || j == 1 || i == 7 || j == 21) {
+                document.write("*")
+            } else {
+                document.write("&nbsp&nbsp")
+            }
+        }
+        document.write("<br>")
+    }
+    document.write("công thức tính lãi ngân hàng" + "<br><br>");
+    let money = parseInt(prompt("Số tiền gửi"));
+    let N = parseInt(prompt("nhập tháng"));
+    let interrest = parseFloat(prompt("lãi suất"));
+    let total;
+    for (i = 1; i < N;i++){
+        interrest = money * interrest ;
+        total = interrest;
+            document.write("tiền lãi ngân hàng là"+ interrest)
+        }
+</script>
+</body>
+</html>
