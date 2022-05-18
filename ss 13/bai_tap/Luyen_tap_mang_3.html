@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = Array(10);
+    for (let i = 0; i < a.length; i++) {
+        a[i] = parseInt(Math.random()*100 );
+    }
+    document.write(a);
+    document.write("<br>");
+    let max = a[0];
+    let sum = 0
+    for (let i = 0; i <a.length ; i++) {
+        if (max<a[i]){
+            max=a[i];
+    sum = (sum + a[i])/10;
+        }
+    }document.write("max:" + max)
+    document.write("<br>")
+    document.write("medium:" + sum)
+</script>
+</body>
+</html>
