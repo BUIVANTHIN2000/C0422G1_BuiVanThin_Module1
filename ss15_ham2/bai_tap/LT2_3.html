@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let gt = 1
+    let N = parseInt(prompt("Enter N"))
+    function tinhGt(N) {
+        for (let i = 1; i <= N;i++){
+            gt = gt * i
+        }
+        document.write(N +"!" + "=" + gt)
+        return gt;
+    }
+    tinhGt(N)
+</script>
+</body>
+</html>

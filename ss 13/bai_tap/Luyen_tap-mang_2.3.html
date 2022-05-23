@@ -6,17 +6,17 @@
 </head>
 <body>
 <script>
-    let num = parseInt(prompt("Input the number of elements in the array: "));
+    let num = parseInt(prompt("nhập số phần tử vào mảng"))
     let a = Array(num);
-    let count = 0;//dem so ky tu so
+    let count = 0;
     for (let i = 0; i < num; i++) {
-        a[i] = prompt('Input symbol '+ i + ":");
+        a[i] = prompt('nhập kí tự' + i + ":");
     }
-    document.write("Mang bao gom: "+ a+'<br>');
+    document.write("Mang bao gom:" + a + '<br>');
     for (let i = 0; i < a.length; i++) {
         if (!isNaN(a[i])) count++;
     }
-    document.write('So ky tu so trong mang: '+count);
+    document.write('so ki tu trong mang:' + count);
 </script>
 </body>
 </html>

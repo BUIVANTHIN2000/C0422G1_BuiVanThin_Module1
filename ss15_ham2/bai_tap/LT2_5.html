@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [12,77,3];
+    let min = a[0];
+    function smalLest(a) {
+        for (let i = 0; i < a.length; i++) {
+            if (a[i] < min) {
+                min = a[i];
+            }
+        }
+        document.write("Số nhỏ nhất là " + ":" + min + "<br>");
+    }
+    smalLest(a)
+</script>
+</body>
+</html>

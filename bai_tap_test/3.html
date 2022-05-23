@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Viết chương trình cho người dùng nhập vào 1 số
+    // nguyên bất kì. Hiển thị các số KHÔNG phải số
+    // nguyên tố từ 0 đến số người dùng nhập vào.
+    function isprime(number) {
+        let flag = false;
+        if (n < 2) return flag = 0;
+        let i = 2;
+        while (i < n) {
+            if (n % i == 0) {
+                flag = 0;
+                break;
+            }
+            i++;
+        }
+        return flag;
+    }
+    let n = prompt(" nhap mot so n: ");
+    let i = 0, check = 0, result = "";
+    while (i < n) {
+        check = isprime(i);
+        if (check == 1) result += i + " ";
+        ++i;
+    }
+    document.write(result);
+
+
+</script>
+</body>
+</html>1
